@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Compressor AI One</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Image Compressor AI One</h1>
+
+<div class="container">
+
+<input type="file" id="upload" accept="image/*">
+
+<div class="preview-box">
+
+<div class="box">
+<p>Original</p>
+<img id="originalImage">
+<p id="originalSize"></p>
+</div>
+
+<div class="box">
+<p>Compressed</p>
+<img id="previewImage">
+<p id="compressedSize"></p>
+</div>
+
+</div>
+
+<div class="controls">
+
+<label>Width</label><br>
+<input type="number" id="width">
+
+<br>
+<label>Height</label><br>
+<input type="number" id="height">
+
+<br>
+<label>Quality (0.1 - 1)</label><br>
+<input type="number" id="quality" step="0.1" value="0.8">
+
+</div>
+
+<div class="download">
+
+<label>Select Format</label><br>
+<select id="format">
+<option value="image/jpeg">JPG</option>
+<option value="image/png">PNG</option>
+<option value="image/webp">WEBP</option>
+</select>
+
+<br><br>
+
+<label>File Name</label><br>
+<input type="text" id="filename" value="compressed-image">
+
+<br><br>
+
+<button onclick="compressAndDownload()">Compress & Download</button>
+
+</div>
+
+<canvas id="canvas"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
