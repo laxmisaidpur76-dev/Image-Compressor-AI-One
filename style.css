@@ -1,0 +1,103 @@
+body{
+font-family: Arial;
+background:#eef2f7;
+text-align:center;
+margin:0;
+padding:0;
+}
+
+h1{
+background:#1e293b;
+color:white;
+padding:12px;
+margin:0;
+font-size:18px;
+}
+
+.container{
+margin-top:15px;
+max-width:420px;
+margin-left:auto;
+margin-right:auto;
+background:white;
+padding:10px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+/* preview side by side */
+.preview-box{
+display:flex;
+gap:8px;
+margin-top:10px;
+}
+
+.box{
+flex:1;
+background:#f1f5f9;
+padding:6px;
+border-radius:8px;
+}
+
+.box p{
+font-size:11px;
+margin:3px 0;
+}
+
+.box img{
+width:100%;
+max-height:120px;
+object-fit:contain;
+border-radius:6px;
+display:none;
+background:#e2e8f0;
+}
+
+/* controls */
+.controls{
+margin-top:10px;
+}
+
+.controls input{
+padding:5px;
+margin:3px;
+width:85%;
+font-size:12px;
+}
+
+/* download */
+.download{
+margin-top:10px;
+}
+
+.download input{
+padding:5px;
+margin:3px;
+width:85%;
+font-size:12px;
+}
+
+.download button{
+padding:6px 10px;
+font-size:12px;
+cursor:pointer;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+}
+
+.download button:hover{
+background:#1d4ed8;
+}
+
+select{
+padding:5px;
+margin-top:5px;
+width:90%;
+font-size:12px;
+}
+
+canvas{
+display:none;
+}
